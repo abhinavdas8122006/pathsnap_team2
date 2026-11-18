@@ -15,7 +15,8 @@ from shapely import STRtree
 from data_loader import load_trip, to_xy
 
 RADIUS_M = 50.0          # candidate search radius in metres
-CONTEXT = 2              # neighbouring GPS points used on each side for context features
+CONTEXT = 4              # neighbouring GPS points used on each side for context features
+HEADING_WINDOW = 5       # points on each side used to measure the GPS direction of travel
 
 FEATURE_COLUMNS = [
     "dist", "dist_rank", "dist_minus_min", "n_candidates",
@@ -116,8 +117,10 @@ def build_trip_features(partition, trip_id, data_dir=None, with_labels=True):
     dist, u = point_to_segment(g["px"][pt_idx], g["py"][pt_idx], ax, ay, bx, by)
 
     # --- GPS movement direction and speed (using the previous and next point) ---
-    prev_i = np.clip(np.arange(T) - 1, 0, T - 1)
-    next_i = np.clip(np.arange(T) + 1, 0, T - 1)
+    # a wider window (HEADING_WINDOW points each side) gives a much steadier direction at low speed,
+    # where GPS jitter of a few metres is as large as the actual movement
+    prev_i = np.clip(np.arange(T) - HEADING_WINDOW, 0, T - 1)
+    next_i = np.clip(np.arange(T) + HEADING_WINDOW, 0, T - 1)
     mx, my = g["px"][next_i] - g["px"][prev_i], g["py"][next_i] - g["py"][prev_i]
     move = np.hypot(mx, my)
     dt_span = np.maximum(g["t"][next_i] - g["t"][prev_i], 1e-6)

@@ -1,0 +1,19 @@
+{
+  "model": "HistGradientBoosting",
+  "family": "Boosting",
+  "config": "200 iters, lr=0.1, 31 leaves",
+  "cv_macro_f1_mean": 0.9348062871834891,
+  "cv_macro_f1_std": 0.008528487508572014,
+  "cv_top1_mean": 0.8930197829315594,
+  "train_macro_f1": 0.9470622836269327,
+  "test_precision": 0.8862636211232188,
+  "test_recall": 0.8841791668844405,
+  "test_macro_f1": 0.9368501595081976,
+  "test_log_loss": 0.05227246179096681,
+  "test_top1_accuracy": 0.8944232477917734,
+  "test_route_continuity": 0.9345813941327198,
+  "train_time_s": 2.5931100845336914,
+  "inference_ms_per_point": 0.009288717062644138,
+  "seed": 42,
+  "point_sample": 0.3
+}

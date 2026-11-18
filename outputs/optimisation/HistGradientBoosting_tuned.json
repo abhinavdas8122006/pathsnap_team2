@@ -1,0 +1,15 @@
+{
+  "model": "HistGradientBoosting_tuned",
+  "config": "{\"learning_rate\": 0.021146536167031597, \"max_iter\": 500, \"max_leaf_nodes\": 109, \"min_samples_leaf\": 79, \"l2_regularization\": 0.0008111941985431928}",
+  "cv_macro_f1_mean": 0.9366496674633765,
+  "cv_macro_f1_std": 0.007969436945561341,
+  "cv_top1_mean": 0.898175211757341,
+  "test_precision": 0.9010499522748966,
+  "test_recall": 0.8880990958030628,
+  "test_macro_f1": 0.9420059992627197,
+  "test_log_loss": 0.049172706424756435,
+  "test_top1_accuracy": 0.9019495113155281,
+  "test_route_continuity": 0.9394446478063065,
+  "train_time_s": 16.57007384300232,
+  "inference_ms_per_point": 0.05820294340661321
+}

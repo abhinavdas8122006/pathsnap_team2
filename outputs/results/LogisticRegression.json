@@ -1,0 +1,19 @@
+{
+  "model": "LogisticRegression",
+  "family": "Linear",
+  "config": "C=1.0, L2, scaled",
+  "cv_macro_f1_mean": 0.9104324806171078,
+  "cv_macro_f1_std": 0.009409377970783719,
+  "cv_top1_mean": 0.884720042391077,
+  "train_macro_f1": 0.9113511797922376,
+  "test_precision": 0.8322680412371134,
+  "test_recall": 0.8438822976010035,
+  "test_macro_f1": 0.9108166082762517,
+  "test_log_loss": 0.08361194747256062,
+  "test_top1_accuracy": 0.8711127371556996,
+  "test_route_continuity": 0.918945772106887,
+  "train_time_s": 1.3267321586608887,
+  "inference_ms_per_point": 0.0029813475088698604,
+  "seed": 42,
+  "point_sample": 0.3
+}

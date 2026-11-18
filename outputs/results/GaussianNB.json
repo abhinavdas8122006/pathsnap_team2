@@ -1,0 +1,19 @@
+{
+  "model": "GaussianNB",
+  "family": "Probabilistic",
+  "config": "default var_smoothing, scaled",
+  "cv_macro_f1_mean": 0.8201610957304013,
+  "cv_macro_f1_std": 0.009793420069841685,
+  "cv_top1_mean": 0.8638375139355066,
+  "train_macro_f1": 0.8210641612100886,
+  "test_precision": 0.5212618816397399,
+  "test_recall": 0.9257826791407516,
+  "test_macro_f1": 0.8093215396425625,
+  "test_log_loss": 0.4009233836393799,
+  "test_top1_accuracy": 0.8551194271677207,
+  "test_route_continuity": 0.9229723369764158,
+  "train_time_s": 0.42221498489379883,
+  "inference_ms_per_point": 0.007230912885793994,
+  "seed": 42,
+  "point_sample": 0.3
+}

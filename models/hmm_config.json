@@ -1,0 +1,7 @@
+{
+  "top_k": 8,
+  "beta": 5.0,
+  "emission_weight": 0.5,
+  "gap_seconds": 30.0,
+  "unreachable_logp": -30.0
+}

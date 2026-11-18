@@ -1,0 +1,19 @@
+{
+  "model": "MLP",
+  "family": "Neural network",
+  "config": "64-32 ReLU, Adam, early stopping",
+  "cv_macro_f1_mean": 0.9323716508063192,
+  "cv_macro_f1_std": 0.007708724384921991,
+  "cv_top1_mean": 0.8928250419526356,
+  "train_macro_f1": 0.9407352401521945,
+  "test_precision": 0.8917550498321164,
+  "test_recall": 0.8745100088851722,
+  "test_macro_f1": 0.9357101264048855,
+  "test_log_loss": 0.054031796004924734,
+  "test_top1_accuracy": 0.8943187163539434,
+  "test_route_continuity": 0.9412226115149297,
+  "train_time_s": 68.60748624801636,
+  "inference_ms_per_point": 0.013455179240695732,
+  "seed": 42,
+  "point_sample": 0.3
+}

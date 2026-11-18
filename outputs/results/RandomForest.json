@@ -1,0 +1,19 @@
+{
+  "model": "RandomForest",
+  "family": "Ensemble (bagging)",
+  "config": "60 trees, max_depth=12, min_leaf=20",
+  "cv_macro_f1_mean": 0.932620128419139,
+  "cv_macro_f1_std": 0.00871748157853944,
+  "cv_top1_mean": 0.8911533338253568,
+  "train_macro_f1": 0.9451164055538983,
+  "test_precision": 0.9103367267032106,
+  "test_recall": 0.8506245753410339,
+  "test_macro_f1": 0.9338956016674884,
+  "test_log_loss": 0.0540176698348923,
+  "test_top1_accuracy": 0.890660116029896,
+  "test_route_continuity": 0.9317052763687705,
+  "train_time_s": 12.05216908454895,
+  "inference_ms_per_point": 0.00873103216800601,
+  "seed": 42,
+  "point_sample": 0.3
+}
