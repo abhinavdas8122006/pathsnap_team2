@@ -20,3 +20,5 @@ outputs/ – results, plots, maps
 models/ – trained models
 
 AI assistance was used for guidance and code scaffolding; all experiments were run by the team.
+
+- Model 2: Gaussian Naive Bayes (scripts/models/train_gaussian_nb.py)
